@@ -25,4 +25,73 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# firstapp-angular
+
+
+
+---
+---
+---
+---
+
+##### firstapp-angular
+# **APUNTES DE PRÁCTICAS**
+
+
+
+## **TEMAS**
+---
+
+| fecha práctica  | ultima vista  |
+| -------------   | ------------- |
+| 24/06/2022      |  --           |
+
+## Componentes
+
+> Se puede entender como piezas o partes de una página. Pueden ser denominados como elementos compuestos por etiquetas html, con un estilos y funcionalidades especificas. 
+
+``` typescript  
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.css']
+})
+export class CardComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+
+```
+
+
+
+## **PALABRAS CLAVES**
+---
+- Angular cli
+- components
+- directivas
+- templates
+
+
+``` powershell
+git status
+git commit -am "Initial commit"
+
+```
+
+
+## referencias: 
+* Courses Youtube Fazt :shipit:
+  - [x] [Angular 6 Curso Practico, Parte 1](https://www.youtube.com/watch?v=AR1tLGQ7COs) :+1:
+  - [ ] [Angular 6 Curso Practico, Parte 2](https://www.youtube.com/watch?v=OrCdt865WOg)
+
+* Otras opciones ( ***pendientes*** )
+  - [ ] [Curso Angular en Español - Tutorial de Angular 12 desde cero](https://www.youtube.com/watch?v=i-oYrcNtc2s)
+
+* Adicionales
+  - [x] CSS Card Hover Effects [Video link youtube](https://www.youtube.com/watch?v=daAVTmsMXeI)
