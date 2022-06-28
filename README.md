@@ -454,7 +454,29 @@ Establecemos en el template principal (`app.component.html`) del componente la e
 <router-outlet></router-outlet>
 ```
 
+<br>
 
+**Establecer `routerLink` Angular**
+> Básicamente sirve para referenciar las diferetes vistas que tengamos configurados en nuestras rutas. La diferencia es que este mecanismo no recarga la página. 
+
+``` html
+<ul>
+    <li><a routerLink="/panel">Panel</a></li>
+    <li><a routerLink="/about">Abuot</a></li>
+    <li><a routerLink="/register">Register</a></li>
+</ul>
+<router-outlet></router-outlet>
+```
+
+## 1.9 Convertir el proyecto a JS `ng Build --prod`
+> Con esta directiva generaos el proyecto en javascript, el cual podemos subir a cualquier servidor que pueda proveer archivos estáticos.
+``` powershell
+ng build --prod 
+```
+> Puedes ver que después de ejecutar esta directiva tendrás una carpeta generada con todos los archivos generados por el build de angular. Pudes usar esa carpeta para subir y ejecutar el proyecto.
+
+<br>
+<br>
 
 ## **PALABRAS CLAVES**
 ---

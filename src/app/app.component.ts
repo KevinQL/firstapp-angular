@@ -11,8 +11,8 @@ export class AppComponent {
   posts: Array<any> = [];
   constructor(private dataService: DataService) {
     this.dataService.getData().subscribe(data => {
-      console.log(data);
-      this.posts = data;
+      console.log("from the main componente", data);
+      // this.posts = data;
     });
   }
 

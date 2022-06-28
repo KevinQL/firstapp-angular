@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { Post } from '../Post';
 
 @Component({
   selector: 'app-main-panel',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPanelComponent implements OnInit {
 
-  constructor() { }
+  posts: Array<Post> = []; 
+  
+  constructor(private dataService: DataService){
+    this.dataService.getData().subscribe( data => {
+      this.posts = data;
+      console.log(data);
+    });
+  }
 
   ngOnInit(): void {
   }
+
 
 }
